@@ -58,3 +58,10 @@
     }
 }
 
+.noreward {
+    display: flex;
+    justify-content: center;
+    &__p{
+        text-align: center;
+    }
+}

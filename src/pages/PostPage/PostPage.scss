@@ -17,8 +17,11 @@
         width: 90%;
         overflow: hidden;
         align-items: center;
+        margin: 0 0 68px 0;
         @include tablet {
             width: 60%;
+            margin: 0 0 38px 0;
+
           }
     }
 
