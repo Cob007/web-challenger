@@ -1,0 +1,60 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typograpgy" as *;
+@use "../../styles/partials/variable" as *;
+
+
+.reward {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        margin: 24px;
+
+        @include desktop {
+            margin: 24px 48px;
+        }
+    }
+    &__title {
+        font-size: 2rem;
+        margin: 4px 0;
+    }
+    &__divider {
+        width: 100%;
+        height: 1px;
+        background-color: $primary-color-alabaster;
+    }
+    &__body {
+        display: flex;
+        flex-direction: column-reverse;
+        box-sizing: border-box;
+        align-items: center;
+
+        @include tablet {
+            flex-direction: row;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        margin: 24px;
+        width: 50%;
+
+        @include desktop {
+            margin: 24px 48px;
+        }
+    }
+    &__preview {
+        display: flex;
+        width: 50%;
+        box-sizing: border-box;
+        margin: 24px;
+        justify-content: center;
+    }
+    &__logo {
+        width: 60%;
+    }
+}
+
