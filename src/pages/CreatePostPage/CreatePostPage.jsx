@@ -51,6 +51,7 @@ const CreatePost = () => {
         return res.data.secure_url;
       } catch (err) {
         console.log(err);
+        return 'No file attached'
       }
     } catch (error) {}
   };
@@ -58,6 +59,13 @@ const CreatePost = () => {
   const submitPostForChallenge = async () => {
     try {
       const contentUrl = await uploadContent();
+
+      if(contentUrl === "No file attached"){
+        console.log(contentUrl)
+        alert("Please Upload content!");
+        return
+      }
+
       const token = localStorage.getItem("authToken");
       const url = `${BASE_URL}${STAGING_PATH}/post/${challengeId}`;
 

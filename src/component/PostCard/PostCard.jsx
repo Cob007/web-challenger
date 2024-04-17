@@ -2,15 +2,19 @@ import "./PostCard.scss";
 import PhotoOfThDay from "../../assets/images/photo2.avif";
 import ProfilePic from "../../assets/images/avatar.png";
 import Like from "../../assets/svg/like.svg";
+import Placeholder from '../../assets/images/placeholder.avif'
 
 const PostCard = (props) => {
   const { post, handleLikes } = props;
 
+
+  console.log(post)
+  const postUrl = post?.posturl === ''? Placeholder : post?.posturl
   return (
     <section className="postcard">
       <img
         className="postcard__img"
-        src={post?.posturl}
+        src={postUrl}
         alt="challenge sample photo"
       />
 

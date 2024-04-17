@@ -1,8 +1,12 @@
 import "./ChallengeCard.scss";
 import PhotoOfThDay from "../../assets/images/photo2.avif";
+import Placeholder from '../../assets/images/placeholder.avif'
+
 
 const ChallengeCard = (props) => {
   const { challenge, handleChallengeClicked} = props;
+
+  const challengeUrl = challenge?.contenturl === ''? Placeholder : challenge?.contenturl
 
   return (
     <section onClick={()=>{
@@ -11,7 +15,7 @@ const ChallengeCard = (props) => {
       <div className="card__img-bk">
         <img
           className="card__img"
-          src={challenge?.contenturl}
+          src={challengeUrl}
           alt="challenge sample photo"
         />
       </div>
