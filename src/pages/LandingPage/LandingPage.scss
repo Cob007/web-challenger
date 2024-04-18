@@ -10,7 +10,7 @@
   width: 100%;
   min-height: 100vh;
   background-color: red;
-  background: url("../../assets/images/challenger001.jpeg");
+  background: url("../../assets/images/challenger004.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,26 +45,29 @@
 }
 
 .img0 {
-    background-image: url("../../assets/images/challenger001.jpeg");
+    background-image: url("../../assets/images/challenger004.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     transition: background-image  2s;
+    box-shadow: inset 0 0 0 2000px #0000007d;
 }
 
 .img1{
-    background-image: url("../../assets/images/challenger002.jpeg");
+    background-image: url("../../assets/images/challenger005.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: inset 0 0 0 2000px hsla(78, 71%, 3%, 0.5);
+    box-shadow: inset 0 0 0 2000px #0000007d;
     transition: background-image 2s;
 }
 
 .img2{
-    background-image: url("../../assets/images/challenger003.jpeg");
+    background-image: url("../../assets/images/challenger006.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     transition: background-image 2s;
+    box-shadow: inset 0 0 0 2000px #0000007d;
+
 }

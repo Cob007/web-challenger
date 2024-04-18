@@ -54,6 +54,7 @@ const LandingPage = () => {
 
   return (
     <section className={`cont-lp ${style}`}>
+            
       <img className="cont-lp__logo" src={Logo} alt="App Logo" />
       <h1 className="cont-lp__header"><span>{screen.title}</span> A Challenge</h1>
       <button onClick={handleClick} className="cont-lp__button">Get Started</button>
