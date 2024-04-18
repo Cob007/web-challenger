@@ -8,6 +8,7 @@ import Empty from "../Empty/Empty";
 
 const Rewards = () => {
   const [data, setData] = useState([]);
+  
 
   const getRewardFromRemote = async () => {
     try {
