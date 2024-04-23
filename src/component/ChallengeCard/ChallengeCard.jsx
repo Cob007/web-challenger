@@ -1,5 +1,4 @@
 import "./ChallengeCard.scss";
-import PhotoOfThDay from "../../assets/images/photo2.avif";
 import Placeholder from '../../assets/images/placeholder.avif'
 
 

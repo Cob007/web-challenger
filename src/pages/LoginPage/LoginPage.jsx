@@ -9,20 +9,17 @@ import { useLocation, useNavigate } from "react-router-dom";
 const LoginPage = () => {
   const [view, setView] = useState("login");
 
-  const navigate = useNavigate()
-  const location = useLocation()
+  const navigate = useNavigate();
+  const location = useLocation();
 
-
-  useEffect(()=> {
-    const authToken = localStorage.getItem('authToken')
+  useEffect(() => {
+    const authToken = localStorage.getItem("authToken");
+    const path = "/app";
     if (!authToken) {
-      navigate('/auth')
-    } else {
-      navigate('/app')
+      path = "/auth";
     }
-
-  },[location.pathname])
-
+    navigate(path);
+  }, [location.pathname]);
 
   const handleViewChange = (_view) => {
     setView(_view);
@@ -36,7 +33,9 @@ const LoginPage = () => {
         <section className="loginpage__cc">
           <img className="banner__app-logo" src={Logo} alt="App logo" />
           <h3 className="banner__app-desp">
-            Challenger helps you connect and share<br/>with the people in your life.
+            Challenger helps you connect and share
+            <br />
+            with the people in your life.
           </h3>
         </section>
         {view == "login" ? (
