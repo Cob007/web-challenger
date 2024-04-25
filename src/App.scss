@@ -1,6 +1,7 @@
-@use "./styles/partials/variable" as *;
-@use "./styles/partials/mixins" as *;
-@use "./styles/partials/typograpgy" as *;
+@import "./styles/partials/variable";
+@import "./styles/partials/mixins";
+@import "./styles/partials/typograpgy";
+
 
 #root {
   margin: -10px;
