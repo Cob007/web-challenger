@@ -1,4 +1,4 @@
-@use './variable' as *;
+@import './variable';
 
 @mixin btn {
     user-select: none;
