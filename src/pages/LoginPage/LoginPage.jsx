@@ -14,7 +14,7 @@ const LoginPage = () => {
 
   useEffect(() => {
     const authToken = localStorage.getItem("authToken");
-    const path = "/app";
+    let path = "/app";
     if (!authToken) {
       path = "/auth";
     }
